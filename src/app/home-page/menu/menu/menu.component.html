@@ -1,0 +1,16 @@
+<div class="menu animate__animated animate__slideInUp">
+  <div class="menu-header ">
+    <h1 class="Aladin ">Menu</h1>
+    <div class="menu-categories">
+      <button *ngFor="let category of categories"  (click)="setActiveCategory(category)" [ngClass]="{'active': foodCategorySelected === category}">
+        {{ category }}
+      </button>
+    </div>
+  </div>
+  <div class="menu-items">
+    <div  class="menu-item">
+          <app-foods [foodCategory]="foodCategorySelected"></app-foods>
+    </div>
+  </div>
+</div>
+

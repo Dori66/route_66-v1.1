@@ -1,0 +1,7 @@
+<div class="bottom-menu" #menuContainer>
+  <div class="food-container" *ngFor="let food of choosenList" (click)="openSelectedBurger(food)">
+    <img src="{{food.img}}" class="item-img " alt="">
+    <h2 class="Aladin ">{{food.name}}</h2>
+  </div>
+</div>
+

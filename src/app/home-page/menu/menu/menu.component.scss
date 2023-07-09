@@ -1,0 +1,144 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.menu-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+
+
+}
+
+.menu-header h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: white;
+}
+
+.menu-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-categories button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #eee;
+  color: #333;
+  cursor: pointer;
+}
+
+.menu-categories button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.menu-item {
+  text-align: center;
+}
+
+.menu-item h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.menu-item p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.menu-price {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+
+@media (max-width: 500px){
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .menu-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .menu-header h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: white;
+  }
+
+  .menu-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu-categories button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: #eee;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .menu-categories button.active {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  .menu-item {
+    text-align: center;
+  }
+
+  .menu-item h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .menu-item p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .menu-price {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}

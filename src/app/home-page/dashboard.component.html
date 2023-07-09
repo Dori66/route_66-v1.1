@@ -1,0 +1,36 @@
+<nav class="navigation-container">
+  <div class="nav-options">
+    <h2 class="Aladin animate__animated animate__lightSpeedInLeft"
+        [ngClass]="{'animate__animated animate__flip': navigationState === 'home','selected': navigationState == '' || navigationState == 'home'}"
+        (click)="navigationState = 'home'" routerLink="home">Home</h2>
+    <div class="home">
+      <img class="logo animate__animated animate__rotateIn" src="../../assets/logo.png" @fade alt="">
+    </div>
+    <div class="home">
+      <h2 class="Aladin animate__animated animate__lightSpeedInLeft"
+          [ngClass]="{'selected animate__animated animate__flip': navigationState == 'menu'}"
+          (click)="navigationState = 'menu'" routerLink="menu">Menu</h2>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<div class="footer">
+  <h3 class="nox Aladin"><a href="https://www.noxcetera.com/">Powered By: Noxcetera</a></h3>
+  <div class="info">
+    <h3 class="Aladin" style="font-weight: 100; font-size: 18px" > Location: Rruga Luan Haradinaj, Prishtinë</h3>
+  </div>
+  <div class="info">
+    <h3 class="Aladin"><a href="tel:044938666">Click to Call: +383 44 938 666</a> </h3>
+  </div>
+  <div class="social-links">
+    <a href="https://www.instagram.com/route66.prishtina/">
+      <img src="assets/instagram-icon.png" alt="">
+    </a>
+    <a href="https://www.facebook.com/route66.prishtine">
+      <img class="fb" src="assets/facebook-icon.png" alt="">
+    </a>
+  </div>
+</div>
+
